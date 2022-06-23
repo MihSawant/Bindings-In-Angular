@@ -3,12 +3,12 @@
         <label> Enter Username: </label>
     </div>
     <div>
-        <input (blur)="onInputBlur()" type="text" class="form-control" [(ngModel)]="userName">
+        <input type="text" class="form-control" [(ngModel)]="userName">
     </div>
     <div>
         <em>Hello, {{ userName }} Welome to the App.</em>
     </div>
     <div>
-        <button (click)="onResetClick()" class="btn btn-secondary" [disabled]="buttonDisabled">Reset</button>
+        <button (click)="userName = ''" class="btn btn-secondary" [disabled]="userName === ''">Reset</button>
     </div>
 </div>

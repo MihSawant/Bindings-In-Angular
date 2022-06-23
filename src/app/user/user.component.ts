@@ -14,24 +14,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserComponent implements OnInit {
   userName = '';
-  buttonDisabled = true;
 
   constructor() {
    }
 
   ngOnInit(): void {
-  }
-
-  onInputBlur(){
-   if(this.userName.length > 0){
-    this.buttonDisabled = false;
-   }
-  }
-
-  onResetClick(){
-    this.userName = '';
-  }
-  
+  }  
  
 
 }
